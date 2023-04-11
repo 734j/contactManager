@@ -23,7 +23,7 @@ void fix_overflow(char arr[], int len) {
         }
     }
 
-    printf("%d\n", count);
+    //printf("%d\n", count);
     if (count == len) {
         int c;
         while ((c = getchar() != '\n' && c != EOF)) {}
