@@ -22,3 +22,16 @@ char rm_newline (char nlstring[]);
 void fix_overflow(char arr[], int len);
 
 #endif /* FIX_OVERFLOW_H */
+
+#ifndef LIST_ALL_H
+#define LIST_ALL_H
+
+void list_all();
+
+#endif /* LIST_ALL_H */
+
+#ifndef FLAGCHK_H
+#define FLAGCHK_H
+int flagchk (int l_flag, int n_flag, int d_flag, int h_flag, int L_flag);
+
+#endif /* FLAGCHK_H */

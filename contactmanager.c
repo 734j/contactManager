@@ -4,7 +4,7 @@
 #include <string.h>
 #include "contactmanager.h"
 
-#define USAGE "Usage: [-h] [-n] [-l] [-d name]\n"  
+#define USAGE "Usage: [-h] [-n] [-L] [-l name] [-d name]\n"  
 
 
 int main(int argc, char *argv[])
@@ -24,11 +24,14 @@ int main(int argc, char *argv[])
     while ((opt = getopt(argc, argv, "hnLl:d:")) != -1) {
         switch (opt) {
         case 'h':
+            h_flag = 1;
+            flagchk(l_flag, n_flag, d_flag ,h_flag, L_flag);
             printf("%s", USAGE);
-            h_flag = 1; 
             break;
         case 'n':
-            
+            n_flag = 1;
+            flagchk(l_flag, n_flag, d_flag ,h_flag, L_flag);
+
             printf("Name: \n");
             fgets(name, 99, stdin);
             fix_overflow(name, 100);
@@ -61,19 +64,18 @@ int main(int argc, char *argv[])
             
             addcont(name, surname, email, phonenum, address, other_info);
 
-            n_flag = 1;
             break;
         case 'd':
-            
             d_flag = 1;
+            flagchk(l_flag, n_flag, d_flag ,h_flag, L_flag);
             break;
         case 'l':
-            
             l_flag = 1;
+            flagchk(l_flag, n_flag, d_flag ,h_flag, L_flag);
             break;
         case 'L':
-
             L_flag = 1;
+            flagchk(l_flag, n_flag, d_flag ,h_flag, L_flag);
             break;
         default: 
             fprintf(stderr, "%s", USAGE);
@@ -85,11 +87,6 @@ int main(int argc, char *argv[])
         printf("%s", USAGE);
     }
 
-    if (l_flag+n_flag+d_flag+h_flag+L_flag >= 2) {
-        fprintf(stderr, "Error: Options -h, -n, -d, -l cannot be used together.\n");
-        return EXIT_FAILURE;
-
-    }
 
     return EXIT_SUCCESS;
 

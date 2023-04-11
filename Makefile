@@ -1,6 +1,6 @@
 CC = gcc
 CFLAGS = -Wall -Werror -g
-SRCS = contactmanager.c addcontact.c usefulfunctions.c
+SRCS = contactmanager.c addcontact.c usefulfunctions.c listcontacts.c
 EXEC = contman
 
 all: $(EXEC)
