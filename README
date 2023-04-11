@@ -7,5 +7,6 @@ TODO:
 - Create functionality to delete specific contact. (-d)
 - Create functionality to list specific contact (-l)
 - Create functionality to list ALL contacts (-L)
+- Create functionality to edit a specific contact (-E) or (-e)
 - Fix eventual bugs. 
 - Conduct some testing. Write test cases and then execute tests. 
