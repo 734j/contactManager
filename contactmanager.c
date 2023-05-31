@@ -18,19 +18,24 @@ int main(int argc, char *argv[])
     char address[100];
     char other_info[250];
 
-    int opt, n_flag = 0, d_flag = 0, h_flag = 0, l_flag = 0, L_flag = 0;
-
+    int opt;
+    int cnt = 0;
+    while ((opt = getopt(argc, argv, "hnLl:d:")) != -1){
+        cnt++;
+        if(cnt > 1) {
+            printf("Only 1 argument at a time!\n");
+            return EXIT_FAILURE;
+        }
+    }
+    optind = 0;
     
     while ((opt = getopt(argc, argv, "hnLl:d:")) != -1) {
         switch (opt) {
         case 'h':
-            h_flag = 1;
-            flagchk(l_flag, n_flag, d_flag ,h_flag, L_flag);
+        
             printf("%s", USAGE);
             break;
         case 'n':
-            n_flag = 1;
-            flagchk(l_flag, n_flag, d_flag ,h_flag, L_flag);
 
             printf("Name: \n");
             fgets(name, 99, stdin);
@@ -66,16 +71,13 @@ int main(int argc, char *argv[])
 
             break;
         case 'd':
-            d_flag = 1;
-            flagchk(l_flag, n_flag, d_flag ,h_flag, L_flag);
+            
             break;
         case 'l':
-            l_flag = 1;
-            flagchk(l_flag, n_flag, d_flag ,h_flag, L_flag);
+            
             break;
         case 'L':
-            L_flag = 1;
-            flagchk(l_flag, n_flag, d_flag ,h_flag, L_flag);
+            
             list_all();
             break;
         default: 
