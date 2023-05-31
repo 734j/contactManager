@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 
     int opt, n_flag = 0, d_flag = 0, h_flag = 0, l_flag = 0, L_flag = 0;
 
-
+    
     while ((opt = getopt(argc, argv, "hnLl:d:")) != -1) {
         switch (opt) {
         case 'h':
@@ -76,6 +76,7 @@ int main(int argc, char *argv[])
         case 'L':
             L_flag = 1;
             flagchk(l_flag, n_flag, d_flag ,h_flag, L_flag);
+            list_all();
             break;
         default: 
             fprintf(stderr, "%s", USAGE);

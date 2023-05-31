@@ -22,3 +22,21 @@ void list_all() {
     fclose(file);
 
 }
+
+void list_spec_cont () {
+
+    //char ch;
+
+    FILE* file = fopen("contacts.txt", "r");
+    if (file == NULL) {
+        printf("Failed to open the file.\n");
+        
+    }
+    
+    //ch = fgetc(file);
+
+
+
+    fclose(file);
+
+}

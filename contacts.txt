@@ -1,0 +1,38 @@
+<
+Name: Oskar
+Surname: Hass
+E-mail: asassa
+Phone Number: 2589467
+Address: 45 st 3rd ave 
+Other Info: Cool guy
+>
+
+<
+Name: Felix
+Surname: Felixsson
+E-mail: felix@gmail.com
+Phone Number: 3847643
+Address: 23 ave st 323
+Other Info: Cool guy
+>
+Name: Oskar
+Surname: H
+E-mail: ogge@gmail.com
+Phone Number: 072232324
+Address: Stockholm, c blvd 34
+Other Info: Cool person
+
+Name: s
+Surname: s
+E-mail: s
+Phone Number: s
+Address: s
+Other Info: s
+
+Name: d
+Surname: s
+E-mail: ss
+Phone Number: s
+Address: s
+Other Info: s
+
