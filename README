@@ -3,10 +3,10 @@ This is my little project. I am making a contact manager thing.
 My idea for this manager is that it's going to be a CLI contact manager. 
 
 TODO:
-- Fix the fgets() on the -n flag. 
+- Fix the fgets() on the -n flag. Done
 - Create functionality to delete specific contact. (-d)
 - Create functionality to list specific contact (-l)
-- Create functionality to list ALL contacts (-L)
+- Create functionality to list ALL contacts (-L) Done
 - Create functionality to edit a specific contact (-E) or (-e)
 - Fix eventual bugs. 
 - Conduct some testing. Write test cases and then execute tests. 
