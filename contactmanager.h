@@ -32,6 +32,6 @@ void list_all();
 
 #ifndef LIST_SPEC_CONT_H
 #define LIST_SPEC_CONT_H
-void list_spec_cont ();
+void list_spec_cont (char search[]);
 
 #endif /* LIST_SPEC_CONT_H */

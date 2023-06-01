@@ -75,6 +75,7 @@ int main(int argc, char *argv[])
             break;
         case 'l':
             
+            list_spec_cont(optarg);
             break;
         case 'L':
             
